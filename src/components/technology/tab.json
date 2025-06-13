@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_technology_tabs",
+  "info": {
+    "displayName": "Tab",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "html": {
+      "type": "richtext"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "list": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.numbered-item"
+    }
+  }
+}

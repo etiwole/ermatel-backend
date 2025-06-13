@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_machine_tabs_section_items",
+  "info": {
+    "displayName": "TabsSectionItem",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "gallery": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "text": {
+      "type": "richtext"
+    },
+    "note": {
+      "type": "string"
+    }
+  }
+}

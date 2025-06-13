@@ -1,0 +1,19 @@
+{
+  "collectionName": "color_profiles",
+  "info": {
+    "singularName": "color-profile",
+    "pluralName": "color-profiles",
+    "displayName": "Color Profile"
+  },
+  "attributes": {
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "print_prices": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::print-price.print-price"
+    }
+  }
+}

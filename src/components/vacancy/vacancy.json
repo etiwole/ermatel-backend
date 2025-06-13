@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_vacancy_vacancies",
+  "info": {
+    "displayName": "Vacancy",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "city": {
+      "type": "string",
+      "required": true
+    },
+    "salary": {
+      "type": "string"
+    },
+    "experience": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "html": {
+      "type": "richtext"
+    },
+    "summary": {
+      "type": "richtext"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_material_tabs",
+  "info": {
+    "displayName": "Tabs",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "material.tabs-item"
+    }
+  }
+}

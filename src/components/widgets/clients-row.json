@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_widgets_clients_rows",
+  "info": {
+    "displayName": "ClientsRow",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.client"
+    }
+  }
+}

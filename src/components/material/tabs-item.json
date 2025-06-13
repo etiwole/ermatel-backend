@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_material_tabs_items",
+  "info": {
+    "displayName": "TabsItem",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "items": {
+      "type": "component",
+      "repeatable": false,
+      "component": "material.tabs-item-children"
+    }
+  }
+}

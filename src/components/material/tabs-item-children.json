@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_material_tabs_item_children",
+  "info": {
+    "displayName": "TabsItemChildren"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "caption": {
+      "type": "richtext"
+    },
+    "html": {
+      "type": "richtext"
+    },
+    "gallery": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

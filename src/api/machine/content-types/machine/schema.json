@@ -1,0 +1,48 @@
+{
+  "kind": "singleType",
+  "collectionName": "machines",
+  "info": {
+    "singularName": "machine",
+    "pluralName": "machines",
+    "displayName": "Парк оборудования",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "richtext"
+    },
+    "html": {
+      "type": "richtext"
+    },
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "sections": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.text-block"
+    },
+    "tabs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "machine.tabs"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

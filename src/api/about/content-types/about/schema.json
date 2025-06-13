@@ -1,0 +1,61 @@
+{
+  "kind": "singleType",
+  "collectionName": "abouts",
+  "info": {
+    "singularName": "about",
+    "pluralName": "abouts",
+    "displayName": "О компании",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "princeples": {
+      "type": "component",
+      "repeatable": false,
+      "component": "about.principles"
+    },
+    "history": {
+      "type": "component",
+      "repeatable": false,
+      "component": "widgets.timeline"
+    },
+    "awards": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.gallery"
+    },
+    "quality": {
+      "type": "component",
+      "repeatable": false,
+      "component": "about.quality"
+    }
+  }
+}

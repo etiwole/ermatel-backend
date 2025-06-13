@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_machine_tabs_sections",
+  "info": {
+    "displayName": "TabsSection",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "text": {
+      "type": "richtext"
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "machine.tabs-section-item"
+    }
+  }
+}

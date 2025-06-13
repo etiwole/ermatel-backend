@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_home_clients",
+  "info": {
+    "displayName": "Clients",
+    "icon": "alien",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "firstRow": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.client"
+    },
+    "secondRow": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.client"
+    },
+    "thirdRow": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.client"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "enabled": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

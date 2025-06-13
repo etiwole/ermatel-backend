@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_shared_numbered_items",
+  "info": {
+    "displayName": "NumberedItem",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "html": {
+      "type": "richtext"
+    },
+    "caption": {
+      "type": "string"
+    },
+    "advantages": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.text"
+    },
+    "width": {
+      "type": "integer",
+      "max": 3,
+      "default": 3
+    }
+  }
+}

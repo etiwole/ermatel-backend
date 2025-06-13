@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_types_type_with_icons",
+  "info": {
+    "displayName": "Вид гибкой упаковки с иконками",
+    "icon": "grid",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    },
+    "html": {
+      "type": "richtext"
+    },
+    "icons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.text-with-icon"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "caption": {
+      "type": "text"
+    }
+  }
+}

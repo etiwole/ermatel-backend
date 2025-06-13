@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_contacts_divisions",
+  "info": {
+    "displayName": "division",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "employees": {
+      "type": "component",
+      "repeatable": true,
+      "component": "contacts.employee"
+    }
+  }
+}

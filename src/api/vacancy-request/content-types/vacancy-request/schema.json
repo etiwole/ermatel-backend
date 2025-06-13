@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vacancy_requests",
+  "info": {
+    "singularName": "vacancy-request",
+    "pluralName": "vacancy-requests",
+    "displayName": "Заявки на работу",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    },
+    "file": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "policy": {
+      "type": "boolean"
+    }
+  }
+}

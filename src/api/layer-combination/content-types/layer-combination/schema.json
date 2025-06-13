@@ -1,0 +1,31 @@
+{
+  "collectionName": "layer_combinations",
+  "info": {
+    "singularName": "layer-combination",
+    "pluralName": "layer-combinations",
+    "displayName": "Layer Combination"
+  },
+  "attributes": {
+    "layer1": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::layer-material.layer-material"
+    },
+    "layer2": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::layer-material.layer-material"
+    },
+    "layer3": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::layer-material.layer-material"
+    },
+    "print_prices": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::print-price.print-price",
+      "mappedBy": "layer_combination"
+    }
+  }
+}

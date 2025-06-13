@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "singularName": "order",
+    "pluralName": "orders",
+    "displayName": "Заказы",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "technology": {
+      "type": "string"
+    },
+    "width": {
+      "type": "float"
+    },
+    "length": {
+      "type": "float"
+    },
+    "layer1": {
+      "type": "string"
+    },
+    "layer2": {
+      "type": "string"
+    },
+    "layer3": {
+      "type": "string"
+    },
+    "colors": {
+      "type": "integer"
+    },
+    "pantons": {
+      "type": "integer"
+    },
+    "count": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "policy": {
+      "type": "boolean"
+    },
+    "file": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

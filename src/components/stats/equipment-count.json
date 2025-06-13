@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_stats_equipment_count_s",
+  "info": {
+    "displayName": "EquipmentCount ",
+    "icon": "stack",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "value": {
+      "type": "integer",
+      "required": true
+    },
+    "html": {
+      "type": "richtext"
+    },
+    "weight": {
+      "type": "integer"
+    },
+    "paddingBottom": {
+      "type": "integer"
+    },
+    "textColor": {
+      "type": "string",
+      "default": "#11458D",
+      "required": true
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": "#EAEBF2"
+    }
+  }
+}

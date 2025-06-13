@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_types_type_with_many_items",
+  "info": {
+    "displayName": "Вид гибкой упаковки с несколькими секциями",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "text": {
+      "type": "richtext"
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "types.type-item"
+    }
+  }
+}

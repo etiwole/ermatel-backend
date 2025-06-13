@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_shared_htmls",
+  "info": {
+    "displayName": "html",
+    "icon": "bold"
+  },
+  "options": {},
+  "attributes": {
+    "html": {
+      "type": "richtext"
+    }
+  }
+}

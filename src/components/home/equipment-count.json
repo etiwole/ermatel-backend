@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_home_equipment_counts",
+  "info": {
+    "displayName": "EquipmentCount",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "enabled": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "bigItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "stats.equipment-count"
+    },
+    "smallItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "stats.equipment-count"
+    }
+  }
+}

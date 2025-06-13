@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_coordinates",
+  "info": {
+    "displayName": "Coordinates",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "latitude": {
+      "type": "float"
+    },
+    "longitude": {
+      "type": "float"
+    }
+  }
+}

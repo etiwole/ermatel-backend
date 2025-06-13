@@ -1,0 +1,6 @@
+{
+  "content-type-builder": {
+    "plugin.name": "Content Types1",
+    "contentType.api::category.category.displayName": "Статьи"
+  }
+}

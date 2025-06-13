@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_types_advantages",
+  "info": {
+    "displayName": "Advantages",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "advantages": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.text-with-icon"
+    }
+  }
+}

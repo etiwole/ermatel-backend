@@ -1,0 +1,29 @@
+{
+  "collectionName": "print_prices",
+  "info": {
+    "singularName": "print-price",
+    "pluralName": "print-prices",
+    "displayName": "Print Price"
+  },
+  "attributes": {
+    "weight": {
+      "type": "integer",
+      "required": true
+    },
+    "price": {
+      "type": "decimal",
+      "required": true
+    },
+    "layer_combination": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::layer-combination.layer-combination",
+      "inversedBy": "print_prices"
+    },
+    "color_profile": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::color-profile.color-profile"
+    }
+  }
+}

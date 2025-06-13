@@ -1,0 +1,48 @@
+{
+  "kind": "singleType",
+  "collectionName": "types",
+  "info": {
+    "singularName": "type",
+    "pluralName": "types",
+    "displayName": "Виды гибкой упаковки",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "advantages": {
+      "type": "component",
+      "repeatable": false,
+      "component": "types.advantages"
+    },
+    "types": {
+      "type": "dynamiczone",
+      "components": [
+        "types.type-with-many-items",
+        "types.type-with-icons",
+        "types.type-with-gallery"
+      ]
+    },
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

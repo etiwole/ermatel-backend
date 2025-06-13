@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "singularName": "home",
+    "pluralName": "homes",
+    "displayName": "Главная",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "blocks": {
+      "type": "dynamiczone",
+      "components": [
+        "home.hero",
+        "home.about",
+        "home.advontages",
+        "home.sales-geography",
+        "home.clients",
+        "home.equipment-count",
+        "home.benefits",
+        "home.materials"
+      ]
+    }
+  }
+}

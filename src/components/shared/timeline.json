@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_shared_timelines",
+  "info": {
+    "displayName": "Timeline",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "year": {
+      "type": "string",
+      "required": true
+    },
+    "text": {
+      "type": "richtext"
+    }
+  }
+}

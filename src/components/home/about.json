@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_home_abouts",
+  "info": {
+    "displayName": "About",
+    "icon": "book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "advantages": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.text-with-icon"
+    },
+    "facts": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.text-with-icon"
+    },
+    "title": {
+      "type": "richtext",
+      "required": true
+    },
+    "enabled": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

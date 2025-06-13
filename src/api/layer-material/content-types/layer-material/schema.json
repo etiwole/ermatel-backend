@@ -1,0 +1,15 @@
+{
+  "collectionName": "layer_materials",
+  "info": {
+    "singularName": "layer-material",
+    "pluralName": "layer-materials",
+    "displayName": "Layer Material"
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}
