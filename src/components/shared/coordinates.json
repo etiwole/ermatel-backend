@@ -11,6 +11,10 @@
     },
     "longitude": {
       "type": "float"
+    },
+    "title": {
+      "type": "string",
+      "required": true
     }
   }
 }

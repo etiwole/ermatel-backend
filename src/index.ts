@@ -21,6 +21,20 @@ export default {
         }
       }
 
+      if (uid === 'api::vacancy-request.vacancy-request' && action === 'create') {
+        console.log(123)
+        try {
+          await strapi.plugin('email').service('email').send({
+            to: 'thekonogorov@gmail.com',
+            subject: 'Тест',
+            text: 'test'
+          })
+        } catch (e) {
+          console.log(e)
+        }
+
+      }
+
       return next();
     });
   },

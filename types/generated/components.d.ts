@@ -1,5 +1,29 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface AboutAward extends Struct.ComponentSchema {
+  collectionName: 'components_about_awards';
+  info: {
+    displayName: 'Award';
+  };
+  attributes: {
+    image: Schema.Attribute.Media<'images'>;
+    subtitle: Schema.Attribute.String;
+    text: Schema.Attribute.RichText;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
+export interface AboutAwardsBlock extends Struct.ComponentSchema {
+  collectionName: 'components_about_awards_blocks';
+  info: {
+    displayName: 'AwardsBlock';
+  };
+  attributes: {
+    items: Schema.Attribute.Component<'about.award', true>;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface AboutPrinciples extends Struct.ComponentSchema {
   collectionName: 'components_about_principles';
   info: {
@@ -59,7 +83,7 @@ export interface HomeAbout extends Struct.ComponentSchema {
   collectionName: 'components_home_abouts';
   info: {
     description: '';
-    displayName: 'About';
+    displayName: '\u0411\u043B\u043E\u043A: \u041E \u043A\u043E\u043C\u043F\u0430\u043D\u0438\u0438';
     icon: 'book';
   };
   attributes: {
@@ -76,7 +100,7 @@ export interface HomeAdvontages extends Struct.ComponentSchema {
   collectionName: 'components_home_advontages';
   info: {
     description: '';
-    displayName: 'Advontages';
+    displayName: '\u0411\u043B\u043E\u043A: \u041F\u0440\u0435\u0438\u043C\u0443\u0449\u0435\u0441\u0442\u0432\u0430';
     icon: 'bulletList';
   };
   attributes: {
@@ -94,7 +118,7 @@ export interface HomeBenefits extends Struct.ComponentSchema {
   collectionName: 'components_home_benefits';
   info: {
     description: '';
-    displayName: 'Benefits';
+    displayName: '\u0411\u043B\u043E\u043A: \u041F\u0440\u0435\u0438\u043C\u0443\u0449\u0435\u0441\u0442\u0432\u0430';
   };
   attributes: {
     description: Schema.Attribute.String;
@@ -111,7 +135,7 @@ export interface HomeClients extends Struct.ComponentSchema {
   collectionName: 'components_home_clients';
   info: {
     description: '';
-    displayName: 'Clients';
+    displayName: '\u0411\u043B\u043E\u043A: \u041A\u043B\u0438\u0435\u043D\u0442\u044B';
     icon: 'alien';
   };
   attributes: {
@@ -129,7 +153,7 @@ export interface HomeEquipmentCount extends Struct.ComponentSchema {
   collectionName: 'components_home_equipment_counts';
   info: {
     description: '';
-    displayName: 'EquipmentCount';
+    displayName: '\u0411\u043B\u043E\u043A: \u041A\u043E\u043C\u043F\u0430\u043D\u0438\u044F \u0432 \u0446\u0438\u0444\u0440\u0430\u0445';
   };
   attributes: {
     bigItems: Schema.Attribute.Component<'stats.equipment-count', true>;
@@ -145,12 +169,10 @@ export interface HomeHero extends Struct.ComponentSchema {
   collectionName: 'components_home_heroes';
   info: {
     description: '';
-    displayName: 'hero';
+    displayName: '\u0411\u043B\u043E\u043A: \u041E\u0441\u043D\u043E\u0432\u043D\u043E\u0439';
     icon: 'landscape';
   };
   attributes: {
-    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'> &
-      Schema.Attribute.Required;
     title: Schema.Attribute.String & Schema.Attribute.Required;
   };
 }
@@ -159,7 +181,7 @@ export interface HomeMaterials extends Struct.ComponentSchema {
   collectionName: 'components_home_materials';
   info: {
     description: '';
-    displayName: 'Materials';
+    displayName: '\u0411\u043B\u043E\u043A: \u041C\u0430\u0442\u0435\u0440\u0438\u0430\u043B\u044B';
   };
   attributes: {
     description: Schema.Attribute.String;
@@ -176,7 +198,7 @@ export interface HomeSalesGeography extends Struct.ComponentSchema {
   collectionName: 'components_home_sales_geographies';
   info: {
     description: '';
-    displayName: 'SalesGeography';
+    displayName: '\u0411\u043B\u043E\u043A: \u0413\u0435\u043E\u0433\u0440\u0430\u0444\u0438\u044F \u043F\u043E\u0441\u0442\u0430\u0432\u043E\u043A';
     icon: 'bulletList';
   };
   attributes: {
@@ -296,6 +318,7 @@ export interface SharedClient extends Struct.ComponentSchema {
   attributes: {
     image: Schema.Attribute.Media<'images'> & Schema.Attribute.Required;
     link: Schema.Attribute.String;
+    title: Schema.Attribute.String;
   };
 }
 
@@ -308,6 +331,7 @@ export interface SharedCoordinates extends Struct.ComponentSchema {
   attributes: {
     latitude: Schema.Attribute.Float;
     longitude: Schema.Attribute.Float;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
   };
 }
 
@@ -478,7 +502,7 @@ export interface StatsEquipmentCount extends Struct.ComponentSchema {
       Schema.Attribute.Required &
       Schema.Attribute.DefaultTo<'#11458D'>;
     title: Schema.Attribute.String & Schema.Attribute.Required;
-    value: Schema.Attribute.Integer & Schema.Attribute.Required;
+    value: Schema.Attribute.Integer;
     weight: Schema.Attribute.Integer;
   };
 }
@@ -541,7 +565,7 @@ export interface TypesTypeWithGallery extends Struct.ComponentSchema {
       true
     >;
     text: Schema.Attribute.Text;
-    title: Schema.Attribute.String & Schema.Attribute.Required;
+    title: Schema.Attribute.String;
   };
 }
 
@@ -575,7 +599,7 @@ export interface TypesTypeWithManyItems extends Struct.ComponentSchema {
   attributes: {
     items: Schema.Attribute.Component<'types.type-item', true>;
     text: Schema.Attribute.RichText;
-    title: Schema.Attribute.String & Schema.Attribute.Required;
+    title: Schema.Attribute.String;
   };
 }
 
@@ -623,6 +647,8 @@ export interface WidgetsTimeline extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'about.award': AboutAward;
+      'about.awards-block': AboutAwardsBlock;
       'about.principles': AboutPrinciples;
       'about.quality': AboutQuality;
       'contacts.division': ContactsDivision;

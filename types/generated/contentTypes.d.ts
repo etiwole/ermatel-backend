@@ -385,7 +385,7 @@ export interface ApiAboutAbout extends Struct.SingleTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    awards: Schema.Attribute.Component<'shared.gallery', false>;
+    awards: Schema.Attribute.Component<'about.awards-block', false>;
     cover: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -522,14 +522,12 @@ export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    address: Schema.Attribute.String;
     contactEmail: Schema.Attribute.String;
     contactPhone: Schema.Attribute.String;
     coords: Schema.Attribute.Component<'shared.coordinates', false>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    favicon: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -537,6 +535,8 @@ export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
     > &
       Schema.Attribute.Private;
     logo: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    logoReversed: Schema.Attribute.Media<'images'>;
+    notify_emails: Schema.Attribute.String;
     operatingTimes: Schema.Attribute.Component<'shared.text-block', true>;
     personalDataConsent: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
@@ -583,6 +583,7 @@ export interface ApiHomeHome extends Struct.SingleTypeSchema {
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::home.home'> &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

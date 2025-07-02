@@ -25,24 +25,10 @@
         "audios"
       ]
     },
-    "favicon": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
     "contactEmail": {
       "type": "string"
     },
     "contactPhone": {
-      "type": "string"
-    },
-    "address": {
       "type": "string"
     },
     "privacyPolicy": {
@@ -76,6 +62,17 @@
       "type": "component",
       "repeatable": true,
       "component": "shared.text-block"
+    },
+    "logoReversed": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "notify_emails": {
+      "type": "string"
     }
   }
 }

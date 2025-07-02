@@ -13,7 +13,7 @@
     },
     "value": {
       "type": "integer",
-      "required": true
+      "required": false
     },
     "html": {
       "type": "richtext"

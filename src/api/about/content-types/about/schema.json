@@ -47,15 +47,15 @@
       "repeatable": false,
       "component": "widgets.timeline"
     },
-    "awards": {
-      "type": "component",
-      "repeatable": false,
-      "component": "shared.gallery"
-    },
     "quality": {
       "type": "component",
       "repeatable": false,
       "component": "about.quality"
+    },
+    "awards": {
+      "type": "component",
+      "repeatable": false,
+      "component": "about.awards-block"
     }
   }
 }

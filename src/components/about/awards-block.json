@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_about_awards_blocks",
+  "info": {
+    "displayName": "AwardsBlock"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about.award"
+    }
+  }
+}
