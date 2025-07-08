@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "email_queue_states",
+  "info": {
+    "singularName": "email-queue-state",
+    "pluralName": "email-queue-states",
+    "displayName": "email-queue-state"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "currentIndex": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

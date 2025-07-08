@@ -24,6 +24,12 @@ module.exports = {
                 DATABASE_NAME: process.env.DATABASE_NAME,
                 DATABASE_USERNAME: process.env.DATABASE_USERNAME,
                 DATABASE_PASSWORD: process.env.DATABASE_PASSWORD,
+                SMTP_HOST: process.env.SMTP_HOST,
+                SMTP_PORT: process.env.SMTP_PORT,
+                SMTP_USERNAME: process.env.SMTP_USERNAME,
+                SMTP_PASSWORD: process.env.SMTP_PASSWORD,
+                DEFAULT_FROM_EMAIL: process.env.DEFAULT_FROM_EMAIL,
+                DEFAULT_REPLYTO_EMAIL: process.env.DEFAULT_REPLYTO_EMAIL,
             }
         }
     ]

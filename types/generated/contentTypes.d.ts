@@ -510,6 +510,35 @@ export interface ApiContactContact extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiEmailQueueStateEmailQueueState
+  extends Struct.SingleTypeSchema {
+  collectionName: 'email_queue_states';
+  info: {
+    displayName: 'email-queue-state';
+    pluralName: 'email-queue-states';
+    singularName: 'email-queue-state';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    currentIndex: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::email-queue-state.email-queue-state'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
   collectionName: 'globals';
   info: {
@@ -1515,6 +1544,7 @@ declare module '@strapi/strapi' {
       'api::category.category': ApiCategoryCategory;
       'api::color-profile.color-profile': ApiColorProfileColorProfile;
       'api::contact.contact': ApiContactContact;
+      'api::email-queue-state.email-queue-state': ApiEmailQueueStateEmailQueueState;
       'api::global.global': ApiGlobalGlobal;
       'api::home.home': ApiHomeHome;
       'api::layer-combination.layer-combination': ApiLayerCombinationLayerCombination;
